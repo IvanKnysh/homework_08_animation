@@ -1,14 +1,16 @@
 "use strict";
 
-function audioPlay(src) {
+const audioPlay = (src) => {
 	const audio = new Audio();
 	audio.src = src;
 	audio.autoplay = true;
 	audio.volume = 0.1;
-}
+};
 
+/**
+ * Sun sound effect by click
+ */
 const sun = document.querySelector(".sun");
-
 sun.addEventListener("click", () => {
 	audioPlay("./audio/laugh-2.wav");
 });
@@ -38,4 +40,19 @@ const updateImage = () => {
 
 window.addEventListener("load", () => {
 	setInterval(updateImage, 2000);
+});
+
+/**
+ * Destroy
+ */
+document.querySelector("#destroy").addEventListener("click", () => {
+	document.querySelector(".warning").classList.add("active");
+	document.querySelector(".overlay").classList.add("active");
+	audioPlay("./audio/skala.mp3");
+});
+
+document.querySelector("#close").addEventListener("click", () => {
+	document.querySelector(".warning").classList.remove("active");
+	document.querySelector(".overlay").classList.remove("active");
+	// audioPlay("./audio/skala.mp3");
 });

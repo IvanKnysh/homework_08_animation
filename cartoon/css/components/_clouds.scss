@@ -1,7 +1,7 @@
 .clouds-wrapper {
 	transform-style: preserve-3d;
 	transform: rotateX(var(--move-y)) rotateY(var(--move-x));
-	transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
+	transition: 5s cubic-bezier(0.05, 0.5, 0, 1);
 	img {
 		position: absolute;
 		perspective: 1000px;
@@ -12,7 +12,7 @@
 			transform: translateZ(150px);
 		}
 		&.cloud-2 {
-			width: 250px;
+			width: 230px;
 			top: 250px;
 			left: 10%;
 			transform: translateZ(400px);

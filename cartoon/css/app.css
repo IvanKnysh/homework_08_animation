@@ -180,14 +180,14 @@ body {
   position: absolute;
   bottom: 50px;
   left: 10%;
-  transform: translateZ(170px);
+  transform: translateZ(150px);
 }
 .field-wrapper img.animal-1 {
   width: 130px;
   position: absolute;
   bottom: 60px;
   left: 23%;
-  transform: translateZ(300px);
+  transform: translateZ(200px);
 }
 .field-wrapper img.animal-2 {
   width: 150px;
@@ -202,6 +202,13 @@ body {
   bottom: 70px;
   right: 40%;
   transform: translateZ(120px);
+}
+.field-wrapper img.animal-4 {
+  width: 100px;
+  position: absolute;
+  bottom: 120px;
+  left: 40%;
+  transform: translateZ(80px);
 }
 
 .clouds-wrapper {

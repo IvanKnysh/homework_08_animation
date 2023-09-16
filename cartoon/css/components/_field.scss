@@ -29,7 +29,7 @@
 			position: absolute;
 			bottom: 50px;
 			left: 10%;
-			transform: translateZ(170px);
+			transform: translateZ(150px);
 		}
 
 		&.animal-1 {
@@ -37,7 +37,7 @@
 			position: absolute;
 			bottom: 60px;
 			left: 23%;
-			transform: translateZ(300px);
+			transform: translateZ(200px);
 		}
 		&.animal-2 {
 			width: 150px;
@@ -52,6 +52,13 @@
 			bottom: 70px;
 			right: 40%;
 			transform: translateZ(120px);
+		}
+		&.animal-4 {
+			width: 100px;
+			position: absolute;
+			bottom: 120px;
+			left: 40%;
+			transform: translateZ(80px);
 		}
 	}
 }

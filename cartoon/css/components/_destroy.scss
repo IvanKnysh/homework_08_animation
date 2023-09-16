@@ -16,7 +16,7 @@
 		border: 3px solid rgb(3, 91, 3);
 		box-shadow: 0 0 15px -5px green;
 		transition: 0.3s;
-		z-index: 2;
+		z-index: 1;
 		&:hover {
 			transform: scale(1.05) skew(5deg, 1deg);
 		}

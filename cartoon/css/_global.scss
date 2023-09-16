@@ -1,6 +1,20 @@
+// Variables
+$sun: yellow;
+$sky: #8ad0e9;
+
 // Reset
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	background: linear-gradient(
+		0deg,
+		rgba(246, 251, 253, 1) 20%,
+		rgba(1, 173, 250, 1) 100%
+	);
+	height: 100vh;
+	overflow: hidden;
 }

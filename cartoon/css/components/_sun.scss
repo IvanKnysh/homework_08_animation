@@ -1,0 +1,71 @@
+.sun {
+	position: absolute;
+	top: 200px;
+	left: -130px;
+	width: 100px;
+	height: 100px;
+	background-color: $sun;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s;
+	animation: move 25s linear infinite;
+	img {
+		position: absolute;
+		max-width: 60px;
+		max-height: 60px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: block;
+		transition: 0.1s;
+	}
+	&::before {
+		width: 150px;
+		height: 150px;
+		content: "";
+		position: absolute;
+		top: -25px;
+		left: -25px;
+		background: url("../images/lights.png") no-repeat;
+		background-size: 150px;
+		animation: lights 10s linear infinite;
+	}
+	&:hover {
+		transform: scale(1.1);
+		img {
+			&.face-1 {
+				opacity: 0;
+			}
+			&.face-4 {
+				opacity: 1;
+				width: 60px;
+			}
+		}
+	}
+	&:hover::before {
+		animation: lights 5s linear infinite;
+	}
+}
+
+@keyframes lights {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes move {
+	from {
+		top: 300px;
+		left: -130px;
+	}
+	60% {
+		top: 50px;
+	}
+	to {
+		top: 300px;
+		left: calc(100% + 10px);
+	}
+}

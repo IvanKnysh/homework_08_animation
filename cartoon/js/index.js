@@ -23,6 +23,8 @@ const images = [
 	"./images/sun-face-2.png",
 	"./images/sun-face-3.png",
 	"./images/sun-face-4.png",
+	"./images/sun-face-5.png",
+	"./images/sun-face-6.png",
 ];
 
 let index = 0;
@@ -31,7 +33,7 @@ const sunImg = document.querySelector(".sun img");
 const updateImage = () => {
 	sunImg.src = images[index];
 
-	if (index >= 3) {
+	if (index >= images.length - 1) {
 		index = 0;
 	} else {
 		index++;
@@ -39,7 +41,7 @@ const updateImage = () => {
 };
 
 window.addEventListener("load", () => {
-	setInterval(updateImage, 2000);
+	setInterval(updateImage, 3000);
 });
 
 /**
@@ -54,5 +56,4 @@ document.querySelector("#destroy").addEventListener("click", () => {
 document.querySelector("#close").addEventListener("click", () => {
 	document.querySelector(".warning").classList.remove("active");
 	document.querySelector(".overlay").classList.remove("active");
-	// audioPlay("./audio/skala.mp3");
 });

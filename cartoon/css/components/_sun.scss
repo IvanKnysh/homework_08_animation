@@ -61,8 +61,13 @@
 		top: 300px;
 		left: -130px;
 	}
-	60% {
+	20% {
 		top: 50px;
+		z-index: 2;
+	}
+	80% {
+		top: 50px;
+		z-index: 2;
 	}
 	to {
 		top: 300px;

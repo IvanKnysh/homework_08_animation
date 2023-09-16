@@ -50,7 +50,12 @@ window.addEventListener("load", () => {
 document.querySelector("#destroy").addEventListener("click", () => {
 	document.querySelector(".warning").classList.add("active");
 	document.querySelector(".overlay").classList.add("active");
-	audioPlay("./audio/skala.mp3");
+
+	audioPlay("./audio/bra.mp3");
+
+	setTimeout(() => {
+		audioPlay("./audio/skala.mp3");
+	}, 300);
 });
 
 document.querySelector("#close").addEventListener("click", () => {

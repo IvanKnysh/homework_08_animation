@@ -12,7 +12,7 @@ const audioPlay = (src) => {
  */
 const sun = document.querySelector(".sun");
 sun.addEventListener("click", () => {
-	audioPlay("./audio/laugh-2.wav");
+	audioPlay("./audio/laugh.wav");
 });
 
 /**

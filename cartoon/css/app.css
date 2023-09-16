@@ -149,12 +149,17 @@
   display: block;
 }
 
-.field-wrapper img {
+.field-wrapper {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+  transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
+}
+.field-wrapper img {
   width: 100%;
   display: block;
-  z-index: 1;
+  transform: translateZ(100px) scale(1.1);
 }
 
 .clouds-wrapper {

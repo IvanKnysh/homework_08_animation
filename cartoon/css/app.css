@@ -19,6 +19,7 @@
   background-color: yellow;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 2;
   transition: 0.3s;
   animation: move 25s linear infinite;
 }
@@ -72,11 +73,9 @@
   }
   20% {
     top: 50px;
-    z-index: 2;
   }
   80% {
     top: 50px;
-    z-index: 2;
   }
   to {
     top: 300px;

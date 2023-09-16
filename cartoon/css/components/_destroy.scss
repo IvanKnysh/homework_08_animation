@@ -1,4 +1,6 @@
 .destroy-wrapper {
+	position: relative;
+	z-index: 3;
 	button#destroy {
 		position: fixed;
 		top: 10px;
@@ -16,7 +18,7 @@
 		transition: 0.3s;
 		z-index: 2;
 		&:hover {
-			transform: scale(1.05);
+			transform: scale(1.05) skew(5deg, 1deg);
 		}
 	}
 

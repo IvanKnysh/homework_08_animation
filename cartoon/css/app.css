@@ -83,6 +83,10 @@
     left: calc(100% + 10px);
   }
 }
+.destroy-wrapper {
+  position: relative;
+  z-index: 3;
+}
 .destroy-wrapper button#destroy {
   position: fixed;
   top: 10px;
@@ -101,7 +105,7 @@
   z-index: 2;
 }
 .destroy-wrapper button#destroy:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) skew(5deg, 1deg);
 }
 .destroy-wrapper .warning {
   position: fixed;

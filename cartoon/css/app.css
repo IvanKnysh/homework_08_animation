@@ -83,7 +83,7 @@ body {
 }
 .destroy-wrapper {
   position: relative;
-  z-index: 3;
+  z-index: 10;
 }
 .destroy-wrapper button#destroy {
   position: fixed;
@@ -155,9 +155,53 @@ body {
   transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
 }
 .field-wrapper img {
-  width: 100%;
   display: block;
-  transform: translateZ(100px) scale(1.1);
+}
+.field-wrapper img.bg {
+  width: 100%;
+  transform: translateZ(70px) scale(1.1);
+}
+.field-wrapper img.tree-1 {
+  width: 300px;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  transform: translateZ(300px);
+}
+.field-wrapper img.tree-2 {
+  width: 400px;
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+  transform: translateZ(100px);
+}
+.field-wrapper img.tree-3 {
+  width: 500px;
+  position: absolute;
+  bottom: 50px;
+  left: 10%;
+  transform: translateZ(170px);
+}
+.field-wrapper img.animal-1 {
+  width: 130px;
+  position: absolute;
+  bottom: 60px;
+  left: 23%;
+  transform: translateZ(300px);
+}
+.field-wrapper img.animal-2 {
+  width: 150px;
+  position: absolute;
+  bottom: 70px;
+  right: 20%;
+  transform: translateZ(180px);
+}
+.field-wrapper img.animal-3 {
+  width: 130px;
+  position: absolute;
+  bottom: 70px;
+  right: 40%;
+  transform: translateZ(120px);
 }
 
 .clouds-wrapper {
@@ -201,8 +245,8 @@ body {
 }
 .clouds-wrapper img.cloud-6 {
   width: 100px;
-  top: 400px;
-  left: 30%;
+  top: 350px;
+  left: 35%;
   transform: translateZ(70px);
 }
 

@@ -24,7 +24,6 @@ const images = [
 	"./images/sun-face-3.png",
 	"./images/sun-face-4.png",
 	"./images/sun-face-5.png",
-	"./images/sun-face-6.png",
 ];
 
 let index = 0;
@@ -40,7 +39,7 @@ const updateImage = () => {
 	}
 
 	// rain
-	if (index >= 3 && index <= 4) {
+	if (index === 3) {
 		document.querySelector("#rain").classList.add("active");
 	} else {
 		document.querySelector("#rain").classList.remove("active");
@@ -48,7 +47,7 @@ const updateImage = () => {
 };
 
 window.addEventListener("load", () => {
-	setInterval(updateImage, 3000);
+	setInterval(updateImage, 4000);
 });
 
 /**

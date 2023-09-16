@@ -205,4 +205,14 @@ body {
   top: 400px;
   left: 30%;
   transform: translateZ(70px);
+}
+
+#rain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#rain.active {
+  background: url("../images/rain.gif");
+  z-index: 5;
 }/*# sourceMappingURL=app.css.map */

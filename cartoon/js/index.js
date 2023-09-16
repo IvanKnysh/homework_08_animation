@@ -38,6 +38,13 @@ const updateImage = () => {
 	} else {
 		index++;
 	}
+
+	// rain
+	if (index >= 3 && index <= 4) {
+		document.querySelector("#rain").classList.add("active");
+	} else {
+		document.querySelector("#rain").classList.remove("active");
+	}
 };
 
 window.addEventListener("load", () => {

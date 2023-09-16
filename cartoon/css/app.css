@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-body {
+.cartoon {
   background: linear-gradient(0deg, rgb(246, 251, 253) 20%, rgb(1, 173, 250) 100%);
   height: 100vh;
   overflow: hidden;
@@ -146,9 +146,55 @@ body {
 }
 
 .field-wrapper img {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 100vh;
   display: block;
   z-index: 1;
+}
+
+.clouds-wrapper {
+  transform-style: preserve-3d;
+  transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+  transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
+}
+.clouds-wrapper img {
+  position: absolute;
+  perspective: 1000px;
+}
+.clouds-wrapper img.cloud-1 {
+  width: 120px;
+  top: 50px;
+  left: 50px;
+  transform: translateZ(150px);
+}
+.clouds-wrapper img.cloud-2 {
+  width: 250px;
+  top: 250px;
+  left: 10%;
+  transform: translateZ(400px);
+}
+.clouds-wrapper img.cloud-3 {
+  width: 250px;
+  top: 150px;
+  left: 55%;
+  transform: translateZ(200px);
+}
+.clouds-wrapper img.cloud-4 {
+  width: 150px;
+  top: 200px;
+  left: 80%;
+  transform: translateZ(120px);
+}
+.clouds-wrapper img.cloud-5 {
+  width: 120px;
+  top: 80px;
+  left: 30%;
+  transform: translateZ(100px);
+}
+.clouds-wrapper img.cloud-6 {
+  width: 100px;
+  top: 400px;
+  left: 30%;
+  transform: translateZ(70px);
 }/*# sourceMappingURL=app.css.map */

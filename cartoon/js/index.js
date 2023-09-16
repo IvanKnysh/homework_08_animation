@@ -57,3 +57,19 @@ document.querySelector("#close").addEventListener("click", () => {
 	document.querySelector(".warning").classList.remove("active");
 	document.querySelector(".overlay").classList.remove("active");
 });
+
+/**
+ * Parallax
+ */
+const root = document.documentElement;
+
+root.addEventListener("mousemove", (e) => {
+	root.style.setProperty(
+		"--move-x",
+		(e.clientX - innerWidth / 2) * -0.005 + "deg"
+	);
+	root.style.setProperty(
+		"--move-y",
+		(e.clientY - innerHeight / 2) * -0.01 + "deg"
+	);
+});

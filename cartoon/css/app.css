@@ -118,6 +118,13 @@ body {
   left: 10%;
   transform: translateZ(150px);
 }
+.field-wrapper img.river {
+  width: 300px;
+  position: absolute;
+  bottom: 30px;
+  left: 28%;
+  transform: translateZ(100px);
+}
 .field-wrapper img.animal-1 {
   width: 130px;
   position: absolute;

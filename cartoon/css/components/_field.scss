@@ -12,6 +12,7 @@
 			width: 100%;
 			transform: translateZ(70px) scale(1.1);
 		}
+
 		&.tree-1 {
 			width: 300px;
 			position: absolute;
@@ -32,6 +33,14 @@
 			bottom: 50px;
 			left: 10%;
 			transform: translateZ(150px);
+		}
+
+		&.river {
+			width: 300px;
+			position: absolute;
+			bottom: 30px;
+			left: 28%;
+			transform: translateZ(100px);
 		}
 
 		&.animal-1 {

@@ -9,7 +9,7 @@
 	cursor: pointer;
 	z-index: 2;
 	transition: 0.3s;
-	animation: move 25s linear infinite;
+	animation: move 25s 3s linear infinite;
 	img {
 		position: absolute;
 		max-width: 60px;

@@ -1,0 +1,83 @@
+.sounds-of-nature {
+	position: relative;
+	z-index: 10;
+	audio {
+		display: none;
+	}
+	button {
+		position: fixed;
+		border: none;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		cursor: pointer;
+		outline: none;
+		border: 3px solid rgb(3, 91, 3);
+		box-shadow: 0 0 15px -5px green;
+		transition: 0.3s;
+		&#control {
+			top: 10px;
+			left: 10px;
+			background: green url("../images/play.png") no-repeat 50% 50%;
+			background-size: 10px;
+			&.active {
+				background: green url("../images/pause.png") no-repeat 50% 50%;
+				background-size: 7px;
+			}
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+		&#volume-btn {
+			top: 10px;
+			left: 60px;
+			background: green url("../images/volume.png") no-repeat 50% 50%;
+			background-size: 15px;
+			z-index: 10;
+		}
+	}
+
+	.volume-area {
+		position: fixed;
+		.range-wrapper {
+			position: absolute;
+			top: 10px;
+			left: 60px;
+			height: 40px;
+			background: green;
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+			input {
+				display: none;
+				overflow: hidden;
+				width: 80px;
+				appearance: none;
+				background-color: yellow;
+				border-radius: 6px;
+				&::-webkit-slider-runnable-track {
+					appearance: none;
+					height: 15px;
+				}
+				&::-webkit-slider-thumb {
+					width: 10px;
+					appearance: none;
+					height: 10px;
+					cursor: ew-resize;
+					background: rgb(3, 91, 3);
+					box-shadow: -80px 0 0 80px rgb(3, 91, 3);
+				}
+			}
+		}
+		&:hover {
+			.range-wrapper {
+				border: 3px solid rgb(3, 91, 3);
+				padding-left: 50px;
+				padding-right: 20px;
+				input {
+					display: block;
+				}
+			}
+		}
+	}
+}

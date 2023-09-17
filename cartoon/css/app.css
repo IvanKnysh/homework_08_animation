@@ -81,72 +81,6 @@ body {
     left: calc(100% + 10px);
   }
 }
-.destroy-wrapper {
-  position: relative;
-  z-index: 10;
-}
-.destroy-wrapper button#destroy {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  border: none;
-  background-color: green;
-  padding: 10px 20px;
-  border-radius: 14px;
-  cursor: pointer;
-  outline: none;
-  color: yellow;
-  font-size: 20px;
-  border: 3px solid rgb(3, 91, 3);
-  box-shadow: 0 0 15px -5px green;
-  transition: 0.3s;
-  z-index: 1;
-}
-.destroy-wrapper button#destroy:hover {
-  transform: scale(1.05) skew(5deg, 1deg);
-}
-.destroy-wrapper .warning {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 40px -10px #000;
-  z-index: 2;
-  display: none;
-}
-.destroy-wrapper .warning img {
-  display: block;
-  width: 300px;
-  border-radius: 8px;
-}
-.destroy-wrapper .warning button#close {
-  position: absolute;
-  top: -15px;
-  right: -15px;
-  width: 30px;
-  height: 30px;
-  color: #fff;
-  background-color: #000;
-  border: none;
-  border-radius: 4px;
-  outline: none;
-  cursor: pointer;
-}
-.destroy-wrapper .warning.active {
-  display: block;
-}
-.destroy-wrapper .overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  display: none;
-}
-.destroy-wrapper .overlay.active {
-  display: block;
-}
-
 .field-wrapper {
   position: absolute;
   bottom: -50px;
@@ -264,4 +198,154 @@ body {
 #rain.active {
   background: url("../images/rain.gif");
   z-index: 5;
+}
+
+.destroy-wrapper {
+  position: relative;
+  z-index: 10;
+}
+.destroy-wrapper button#destroy {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: green;
+  padding: 10px 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  outline: none;
+  color: yellow;
+  font-size: 20px;
+  border: 3px solid rgb(3, 91, 3);
+  box-shadow: 0 0 15px -5px green;
+  transition: 0.3s;
+}
+.destroy-wrapper button#destroy:hover {
+  transform: scale(1.05) skew(5deg, 1deg);
+}
+.destroy-wrapper .warning {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 40px -10px #000;
+  z-index: 2;
+  display: none;
+}
+.destroy-wrapper .warning img {
+  display: block;
+  width: 300px;
+  border-radius: 8px;
+}
+.destroy-wrapper .warning button#close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+.destroy-wrapper .warning.active {
+  display: block;
+}
+.destroy-wrapper .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+.destroy-wrapper .overlay.active {
+  display: block;
+}
+
+.sounds-of-nature {
+  position: relative;
+  z-index: 10;
+}
+.sounds-of-nature audio {
+  display: none;
+}
+.sounds-of-nature button {
+  position: fixed;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid rgb(3, 91, 3);
+  box-shadow: 0 0 15px -5px green;
+  transition: 0.3s;
+}
+.sounds-of-nature button#control {
+  top: 10px;
+  left: 10px;
+  background: green url("../images/play.png") no-repeat 50% 50%;
+  background-size: 10px;
+}
+.sounds-of-nature button#control.active {
+  background: green url("../images/pause.png") no-repeat 50% 50%;
+  background-size: 7px;
+}
+.sounds-of-nature button#control:hover {
+  transform: scale(1.05);
+}
+.sounds-of-nature button#volume-btn {
+  top: 10px;
+  left: 60px;
+  background: green url("../images/volume.png") no-repeat 50% 50%;
+  background-size: 15px;
+  z-index: 10;
+}
+.sounds-of-nature .volume-area {
+  position: fixed;
+}
+.sounds-of-nature .volume-area .range-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  height: 40px;
+  background: green;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.sounds-of-nature .volume-area .range-wrapper input {
+  display: none;
+  overflow: hidden;
+  width: 80px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: yellow;
+  border-radius: 6px;
+}
+.sounds-of-nature .volume-area .range-wrapper input::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 15px;
+}
+.sounds-of-nature .volume-area .range-wrapper input::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+          appearance: none;
+  height: 10px;
+  cursor: ew-resize;
+  background: rgb(3, 91, 3);
+  box-shadow: -80px 0 0 80px rgb(3, 91, 3);
+}
+.sounds-of-nature .volume-area:hover .range-wrapper {
+  border: 3px solid rgb(3, 91, 3);
+  padding-left: 50px;
+  padding-right: 20px;
+}
+.sounds-of-nature .volume-area:hover .range-wrapper input {
+  display: block;
 }/*# sourceMappingURL=app.css.map */

@@ -84,3 +84,24 @@ root.addEventListener("mousemove", (e) => {
 		(e.clientY - innerHeight / 2) * -0.01 + "deg"
 	);
 });
+
+/**
+ * Sound of nature
+ */
+const control = document.querySelector("#control");
+const volume = document.querySelector("#volume");
+const audio = document.querySelector("#nature");
+
+// set volume 50% as default
+audio.volume = 0.5;
+
+// play / pause audio event
+control.addEventListener("click", (e) => {
+	e.target.classList.toggle("active");
+	e.target.classList.contains("active") ? audio.play() : audio.pause();
+});
+
+// change volume event
+volume.addEventListener("input", (e) => {
+	audio.volume = e.target.value / 100;
+});

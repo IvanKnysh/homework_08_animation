@@ -21,7 +21,7 @@ body {
   cursor: pointer;
   z-index: 2;
   transition: 0.3s;
-  animation: move 25s linear infinite;
+  animation: move 25s 3s linear infinite;
 }
 .sun img {
   position: absolute;
@@ -86,7 +86,9 @@ body {
   bottom: -50px;
   transform-style: preserve-3d;
   transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+  perspective: 500em;
   transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
+  animation: zoom 5s cubic-bezier(1, 0, 0.5, 0.5);
 }
 .field-wrapper img {
   display: block;
@@ -145,6 +147,14 @@ body {
   transform: translateZ(80px);
 }
 
+@keyframes zoom {
+  from {
+    perspective: 200px;
+  }
+  to {
+    perspective: 500em;
+  }
+}
 .clouds-wrapper {
   transform-style: preserve-3d;
   transform: rotateX(var(--move-y)) rotateY(var(--move-x));

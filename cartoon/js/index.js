@@ -31,12 +31,7 @@ const sunImg = document.querySelector(".sun img");
 
 const updateImage = () => {
 	sunImg.src = images[index];
-
-	if (index >= images.length - 1) {
-		index = 0;
-	} else {
-		index++;
-	}
+	index >= images.length - 1 ? (index = 0) : index++;
 
 	// rain
 	if (index === 3) {

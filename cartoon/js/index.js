@@ -11,9 +11,7 @@ const audioPlay = (src) => {
  * Sun sound effect by click
  */
 const sun = document.querySelector(".sun");
-sun.addEventListener("click", () => {
-	audioPlay("./audio/laugh.wav");
-});
+sun.addEventListener("click", () => audioPlay("./audio/laugh.wav"));
 
 /**
  * Update sun img

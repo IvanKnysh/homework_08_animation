@@ -1,0 +1,23 @@
+.cartoon {
+	display: none;
+}
+
+.welcome {
+	h1 {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 100px;
+		color: yellow;
+	}
+	img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		&#lizard-2 {
+			display: none;
+		}
+	}
+}

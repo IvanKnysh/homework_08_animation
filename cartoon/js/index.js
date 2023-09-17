@@ -1,5 +1,20 @@
 "use strict";
 
+/**
+ * Welcome section
+ */
+window.addEventListener("load", () => {
+	setTimeout(() => {
+		document.querySelector(".welcome #lizard-1").style.display = "none";
+		document.querySelector(".welcome #lizard-2").style.display = "block";
+	}, 3000);
+
+	setTimeout(() => {
+		document.querySelector(".welcome").style.display = "none";
+		document.querySelector(".cartoon").style.display = "block";
+	}, 4700);
+});
+
 const audioPlay = (src) => {
 	const audio = new Audio();
 	audio.src = src;

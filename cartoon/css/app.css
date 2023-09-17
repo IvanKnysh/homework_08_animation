@@ -6,8 +6,31 @@
 
 body {
   background: linear-gradient(0deg, rgb(246, 251, 253) 20%, rgb(1, 173, 250) 100%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 100vh;
   overflow: hidden;
+}
+
+.cartoon {
+  display: none;
+}
+
+.welcome h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: yellow;
+}
+.welcome img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.welcome img#lizard-2 {
+  display: none;
 }
 
 .sun {

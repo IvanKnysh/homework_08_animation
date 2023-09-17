@@ -10,7 +10,6 @@
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
-		cursor: pointer;
 		outline: none;
 		border: 3px solid rgb(3, 91, 3);
 		box-shadow: 0 0 15px -5px green;
@@ -18,6 +17,7 @@
 		&#control {
 			top: 10px;
 			left: 10px;
+			cursor: pointer;
 			background: green url("../images/play.png") no-repeat 50% 50%;
 			background-size: 10px;
 			&.active {
